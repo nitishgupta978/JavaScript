@@ -1,23 +1,14 @@
 /*
-Type Conversion : convert data type to another data type
+const = a variable can't be change
 */
 
-let age = window.prompt("Enter your ages ");
-console.log(typeof age);
-age = Number(age);
-console.log(typeof age);
-age += 1;
+const PI = 3.14159;
+let radius;
+let circumference;
 
-console.log("Your age is ", age, "now it's you birthday");
+radius = window.prompt("Enter radius number: ");
+radius = Number(radius);
+// PI = 244.1;
+circumference = 2 * PI * radius;
+console.log(circumference);
 
-let x;
-let y;
-let z;
-
-x = String("Nitish ");
-y = Number(1234.99);
-z = Boolean("gkj");
-
-console.log(x, typeof x);
-console.log(y, typeof y);
-console.log(z, typeof z);
