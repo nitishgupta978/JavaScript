@@ -1,29 +1,20 @@
 /*
-UserInput parameters
-*/
-let a;
-let b;
-let c;
-/*
-a = window.prompt("Enter number of Side A ");
-a = Number(a);
-
-b = window.prompt("Enter number of Side B ");
-b = Number(b);
-
-// c = Math.pow(a, 2)+ Math.pow(b,2);
-c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-
-console.log(c);
+Count =  Counter program 
 */
 
-document.getElementById("myButton").onclick = function () {
-    a = document.getElementById("aText").value;
-    a = Number(a);
+let count = 0;
 
-    b = document.getElementById("bText").value;
-    b = Number(b);
+document.getElementById("increment").onclick = function () {
+    count += 1;
+    document.getElementById("countLable").innerHTML = count;
+}
 
-    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-    c = document.getElementById("clable").innerHTML = " sqrt value of(sum of power of Side a and b) Side c is :" + c;
+document.getElementById("reset").onclick = function () {
+    count = 0;
+    document.getElementById("countLable").innerHTML = count;
+}
+
+document.getElementById("decrement").onclick = function () {
+    count -= 1;
+    document.getElementById("countLable").innerHTML = count;
 }
