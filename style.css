@@ -1,6 +1,27 @@
-#countLable {
+#xLable {
     display: block;
-    text-align: center;
     font-size: 40px;
 
+}
+
+#yLable {
+    display: block;
+    font-size: 40px;
+
+}
+
+#zLable {
+    display: block;
+    font-size: 40px;
+
+}
+
+#aLable {
+    display: block;
+    font-size: 30px;
+}
+
+#roll {
+    display: block;
+    font-size: 30px;
 }
