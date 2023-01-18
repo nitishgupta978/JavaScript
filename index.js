@@ -1,21 +1,23 @@
 /*
-Dies = three dies roll game
+useful string properties & methods
 */
 
-let x;
-let y;
-let z;
-let a;
+let username = "John Wick"
+let coder = "  Ravi "
+let coderPhonNumber = "123-456-7890"
+console.log(username.length);
+console.log(username.search("o"))
+console.log(username.replace(" ", "-"));
+console.log(username.indexOf("n"));
+console.log(username.endsWith("c"));
+console.log(username.endsWith("k"));
+console.log(username.startsWith("J"));
+console.log(username.lastIndexOf("c"));
+console.log(username.toUpperCase());
+console.log(username.toLowerCase());
 
-document.getElementById("roll").onclick = function () {
-    x = Math.floor(Math.random() * 6) + 1;
-    y = Math.floor(Math.random() * 6) + 1;
-    z = Math.floor(Math.random() * 6) + 1;
-    a = Math.abs(x + y + z);
+console.log(coder);
+console.log(coder.trim());
 
-
-    document.getElementById("xLable").innerHTML = x;
-    document.getElementById("yLable").innerHTML = y;
-    document.getElementById("zLable").innerHTML = z;
-    document.getElementById("aLable").innerHTML = "Sum of three Dice is : " + a;
-}
+console.log(coderPhonNumber);
+console.log(coderPhonNumber.replaceAll("-", "/"));
