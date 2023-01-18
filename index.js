@@ -1,23 +1,12 @@
 /*
-useful string properties & methods
+slice() extracts a section of a string and returen it as a new string
+         without modifying the original string 
 */
+let fullName = "Nitish Gupta";
+let firstName;
+let lastName;
 
-let username = "John Wick"
-let coder = "  Ravi "
-let coderPhonNumber = "123-456-7890"
-console.log(username.length);
-console.log(username.search("o"))
-console.log(username.replace(" ", "-"));
-console.log(username.indexOf("n"));
-console.log(username.endsWith("c"));
-console.log(username.endsWith("k"));
-console.log(username.startsWith("J"));
-console.log(username.lastIndexOf("c"));
-console.log(username.toUpperCase());
-console.log(username.toLowerCase());
-
-console.log(coder);
-console.log(coder.trim());
-
-console.log(coderPhonNumber);
-console.log(coderPhonNumber.replaceAll("-", "/"));
+firstName = fullName.slice(fullName.indexOf(" ") + 1);
+lastName = fullName.slice(0, fullName.indexOf(" "));
+console.log(firstName);
+console.log(lastName);
