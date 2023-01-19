@@ -1,13 +1,12 @@
 /*
-while loop -  repeat some code while some condition is true
-              potentially infinite
+do while loop -  do Something ,
+              then check condition if conditions are true then continew
+              
 */
 
 let username = "";
-while (username == "" || username == null) {
+do {
     username = window.prompt("Please enter your Name");
-}
+} while (username == "" || username == null)
 
 console.log("Hi! ", username);
-
-
