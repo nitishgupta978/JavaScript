@@ -1,25 +1,20 @@
 /*
-nested loop - a loop inside another loop
+function()- Define your code one time and use many time ,
+           to perform some code, call the function name.
 */
 
 
-/*
-for (let i = 1; i <= 4; i += 1) {
-    for (let j = 1; j <= 4; j += 1) {
-        console.log(j);
-    }
+action();
+function action() {
 
+    let birthdayBoy = 12;
+    let names = "John";
+    BirthDay(birthdayBoy, names);
 }
-*/
 
+function BirthDay(birthdayBoy, names) {
+    console.log("Happy birthday to you!");
+    console.log("Happy birthday dear ", names);
+    console.log("you are now ", birthdayBoy, "years old!");
 
-let symbol = window.prompt("enter you favorite symbol!");
-let rows = window.prompt("enter row number!");
-let column = window.prompt("enter column number!");
-
-for (let i = 1; i <= rows; i += 1) {
-    for (let j = 1; j <= column; j += 1) {
-        document.getElementById("myLable").innerHTML += symbol;
-    }
-    document.getElementById("myLable").innerHTML += "<br>";
 }
