@@ -1,23 +1,13 @@
 /*
- Not ! logic operator -> 
-                    true - false, false - true
+while loop -  repeat some code while some condition is true
+              potentially infinite
 */
 
-let temp = 12;
-let sunny = false;
-
-if (!(temp > 0)) {
-    console.log("it's cold outside!")
-} else {
-    console.log("it's warm outside!")
+let username = "";
+while (username == "" || username == null) {
+    username = window.prompt("Please enter your Name");
 }
 
-if (!sunny) {
-    console.log("it's cold outside!")
-} else {
-    console.log("it's warm outside!")
-}
-
-
+console.log("Hi! ", username);
 
 
