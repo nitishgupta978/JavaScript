@@ -1,20 +1,18 @@
 /*
-function()- Define your code one time and use many time ,
-           to perform some code, call the function name.
+return - returns a value back to the place where you invoked a function
 */
 
 
-action();
-function action() {
+let area;
+let width;
+let hight;
 
-    let birthdayBoy = 12;
-    let names = "John";
-    BirthDay(birthdayBoy, names);
-}
+width = window.prompt("enter the number of width!");
+hight = window.prompt("enter the number of hight!");
+area = getTrangle(width, hight);
 
-function BirthDay(birthdayBoy, names) {
-    console.log("Happy birthday to you!");
-    console.log("Happy birthday dear ", names);
-    console.log("you are now ", birthdayBoy, "years old!");
+console.log("the area is :", area);
 
+function getTrangle(width, hight) {
+    return width * hight;
 }
