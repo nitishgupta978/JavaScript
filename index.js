@@ -1,18 +1,22 @@
 /*
-return - returns a value back to the place where you invoked a function
+ternary operator - it is shortcut of if/else statement
+                 take 3 steps
+                 1 . conditions
+                 2 . expression if true
+                 3 . expression if false
+               
+      condition? ifTrur : ifFalse;           
 */
 
+let adult = getValue(31);
+console.log("value is : ", adult);
+function getValue(age) {
+    return age >= 18 ? true : false;
 
-let area;
-let width;
-let hight;
-
-width = window.prompt("enter the number of width!");
-hight = window.prompt("enter the number of hight!");
-area = getTrangle(width, hight);
-
-console.log("the area is :", area);
-
-function getTrangle(width, hight) {
-    return width * hight;
 }
+
+Winners(false);
+function Winners(win) {
+    win ? console.log("You are WIN!") : console.log("You are LOSE!");
+}
+
