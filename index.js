@@ -1,24 +1,23 @@
 /*
-switch case - 
+ Not ! logic operator -> 
+                    true - false, false - true
 */
 
-let Temp = 12;
-let IndiaTemp = 60;
-let sunnyTemp = false
+let temp = 12;
+let sunny = false;
 
-if (Temp >= 0 && Temp <= 35 && sunnyTemp) {
-    console.log("Temperature is good!")
+if (!(temp > 0)) {
+    console.log("it's cold outside!")
 } else {
-    console.log("Temperature is not good!")
+    console.log("it's warm outside!")
 }
 
-// Or || operator
-
-if (IndiaTemp >= 0 || Temp <= 35 && sunnyTemp) {
-    console.log("Temperature is good!")
+if (!sunny) {
+    console.log("it's cold outside!")
 } else {
-    console.log("Temperature is not good!")
+    console.log("it's warm outside!")
 }
+
 
 
 
