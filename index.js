@@ -1,11 +1,18 @@
 /*
-method chaning - calling  one method after another in one 
-                continuous line of code  
+if statement - if statement show conditions like 
+               if it is true than do it other wise don't do this!
 */
 
-let userName = "the big short";
+let age = 18;
 
-let movies = userName.toUpperCase().trim().substring(7);
-
-
-console.log(movies);
+document.getElementById("aButton").onclick = function () {
+    if (age <= 18) {
+        console.log("You are an adult!");
+    } else if (age >= 18 && age <= 30) {
+        console.log("Now You are not adult Person!")
+    } else if (age >= 50 && age <= 85) {
+        console.log("You are Senior citizen!")
+    } else {
+        console.log("You are not alive")
+    }
+}
