@@ -1,12 +1,10 @@
 /*
-do while loop -  do Something ,
-              then check condition if conditions are true then continew
+for loop - repeat some code a certain amount of time
               
 */
 
-let username = "";
-do {
-    username = window.prompt("Please enter your Name");
-} while (username == "" || username == null)
+for (let i = 10; i > 1; i += 1) {
+    console.log(i);
+}
 
-console.log("Hi! ", username);
+console.log("Happy new years");
