@@ -1,12 +1,11 @@
 /*
-slice() extracts a section of a string and returen it as a new string
-         without modifying the original string 
+method chaning - calling  one method after another in one 
+                continuous line of code  
 */
-let fullName = "Nitish Gupta";
-let firstName;
-let lastName;
 
-firstName = fullName.slice(fullName.indexOf(" ") + 1);
-lastName = fullName.slice(0, fullName.indexOf(" "));
-console.log(firstName);
-console.log(lastName);
+let userName = "the big short";
+
+let movies = userName.toUpperCase().trim().substring(7);
+
+
+console.log(movies);
