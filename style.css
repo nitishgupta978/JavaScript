@@ -2,7 +2,9 @@
     align-self: center;
     color: rgb(14, 141, 99);
     box-sizing: unset;
-    margin: 0;
+    margin: 15px;
     position: absolute;
     top: 10%;
+    border-bottom-color: blue;
+
 }
