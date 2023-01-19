@@ -1,31 +1,26 @@
 /*
-if statement - if statement show conditions like 
-               if it is true than do it other wise don't do this!
+switch case - 
 */
 
-let age = 18;
+let grade = 55;
 
-document.getElementById("aButton").onclick = function () {
-    const myCheckbox = document.getElementById("myCheckbox");
-    const myVisaCard = document.getElementById("myVisaBtn")
-    const myDebitCard = document.getElementById("myDebitCard");
-    const myCreditCard = document.getElementById("myCreditCard");
-
-    if (myCheckbox.checked) {
-        console.log("You Subscrib the channel!")
-    } else {
-        console.log("You are not Subscrib the channel!")
-    }
-
-    if (myVisaCard.checked) {
-        console.log("You select my Visa Card!")
-    } else if (myDebitCard.checked) {
-        console.log("You select my Debit Card!")
-    } else if (myCreditCard.checked) {
-        console.log("You select my Credit Card!")
-    } else {
-        console.log("You are not select any Card!")
-    }
-    const label = document.getElementById("myCheckbox").innerHTML;
-    console.log(label);
+switch (true) {
+    case grade >= 90:
+        console.log("you did greate!");
+        break;
+    case grade >= 75 && grade <= 89:
+        console.log("you did good!");
+        break;
+    case grade >= 60 && grade <= 74:
+        console.log("you did OK!");
+        break;
+    case grade >= 35 && grade <= 60:
+        console.log("you did Fine!");
+        break;
+    case grade >= 0 && grade <= 30:
+        console.log("you are FAIL !");
+        break;
+    default:
+        console.log("This is not a grade!")
 }
+
