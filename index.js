@@ -6,13 +6,26 @@ if statement - if statement show conditions like
 let age = 18;
 
 document.getElementById("aButton").onclick = function () {
-    if (age <= 18) {
-        console.log("You are an adult!");
-    } else if (age >= 18 && age <= 30) {
-        console.log("Now You are not adult Person!")
-    } else if (age >= 50 && age <= 85) {
-        console.log("You are Senior citizen!")
+    const myCheckbox = document.getElementById("myCheckbox");
+    const myVisaCard = document.getElementById("myVisaBtn")
+    const myDebitCard = document.getElementById("myDebitCard");
+    const myCreditCard = document.getElementById("myCreditCard");
+
+    if (myCheckbox.checked) {
+        console.log("You Subscrib the channel!")
     } else {
-        console.log("You are not alive")
+        console.log("You are not Subscrib the channel!")
     }
+
+    if (myVisaCard.checked) {
+        console.log("You select my Visa Card!")
+    } else if (myDebitCard.checked) {
+        console.log("You select my Debit Card!")
+    } else if (myCreditCard.checked) {
+        console.log("You select my Credit Card!")
+    } else {
+        console.log("You are not select any Card!")
+    }
+    const label = document.getElementById("myCheckbox").innerHTML;
+    console.log(label);
 }
