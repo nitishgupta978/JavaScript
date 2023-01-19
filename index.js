@@ -1,41 +1,26 @@
 /*
-variables operator - where a variable is accessible    
-
-1. let - variables are limited to the block scope{}, 
-2. var - variable are limited to the function scope(){},
-
-globle variable  = is declared outside any function
-"if globle, var will CHANGE browsers windows properties"
+template literals = delimited with (`)
+                   instead of double or single quotes
+                   allows embedded variables and expression
 */
 
-/*
- for 1 let its persant in block scope
+let username = "John Wick";
+let items = 3;
+let price = 54;
 
-for (let i = 0; i <= 4; i += 1) {
-    console.log(i);
-}
-// for 1 let its outside the block scope
-for (let i = 0; i <= 9; i += 1) {
-}
-console.log(i);
-
-*/
-let name = "John"; // globle 
-getValues();
-function getValues() {
-    for (var i = 0; i <= 4; i += 1) {
-
-    }
-    console.log(i);
-}
+// console.log("Hi", username, "!");
+// console.log("you have", items, " items yes or not!");
+// console.log("total price", price, " of your products");
 
 
-/* for 2 var its not work out side the function
-function getValues() {
-    for (i = 0; i <= 4; i += 1) {
+// console.log(`Hi ${username} !`);
+// console.log(`you have ${items} Orange yes or not!`);
+// console.log(`total price ${price} of your Orange!`);
 
-    }
-}
-console.log(i);
+let total = `Hi ${username} ! <br>
+            you have ${items} items Orange yes or not!<br>
+            total price $${price} of your Orange!<br>`;
 
-*/
+// console.log(total);
+
+document.getElementById("myLable").innerHTML = total;
